@@ -1,0 +1,13 @@
+# Modernized dependency set for running vial-gui on Python 3.13.
+# The upstream requirements.txt pins 2019-era versions that target Python 3.6
+# and no longer build on modern Python/setuptools. This file relaxes the pins
+# to current versions that ship wheels for 3.13.
+fbs==0.9.0
+future
+git+https://github.com/vial-kb/cython-hidapi@fa31fd46e709ac4adba80bd516b1290dd56f43e9#egg=hidapi
+keyboard
+PyInstaller
+PyQt5
+simpleeval
+pywin32; sys_platform == 'win32'
+certifi
